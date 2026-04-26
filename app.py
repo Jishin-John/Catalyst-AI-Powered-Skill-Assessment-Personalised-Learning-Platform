@@ -172,9 +172,9 @@ with col1:
     </div>
     """, unsafe_allow_html=True)
     st.markdown("<br>", unsafe_allow_html=True)
-   if st.button("Enter Candidate Portal →", type="primary", use_container_width=True):
-    st.switch_page("Candidate_Portal")
-       
+    if st.button("Enter Candidate Portal →", type="primary", use_container_width=True, key="candidate_btn"):
+        st.switch_page("pages/Candidate_Portal.py")
+
 with col2:
     st.markdown("""
     <div class="portal-card portal-card-hr">
@@ -195,8 +195,9 @@ with col2:
     </div>
     """, unsafe_allow_html=True)
     st.markdown("<br>", unsafe_allow_html=True)
-    if st.button("Enter HR Portal →", use_container_width=True):
-    st.switch_page("HR_Portal")
+    if st.button("Enter HR Portal →", use_container_width=True, key="hr_btn"):
+        st.switch_page("pages/HR_Portal.py")
+
 st.markdown("---")
 st.markdown("""
 <p style="text-align: center; color: #718096; font-size: 14px;">
