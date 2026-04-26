@@ -173,7 +173,7 @@ with col1:
     """, unsafe_allow_html=True)
     st.markdown("<br>", unsafe_allow_html=True)
     if st.button("Enter Candidate Portal →", type="primary", use_container_width=True, key="candidate_btn"):
-        st.switch_page("Candidate_Portal")
+       st.title("Main Page")
 
 with col2:
     st.markdown("""
@@ -196,7 +196,7 @@ with col2:
     """, unsafe_allow_html=True)
     st.markdown("<br>", unsafe_allow_html=True)
     if st.button("Enter HR Portal →", use_container_width=True, key="hr_btn"):
-        st.switch_page("HR_Portal")
+      st.write("Use sidebar to navigate")
 
 st.markdown("---")
 st.markdown("""
