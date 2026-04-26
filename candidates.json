@@ -1,0 +1,1011 @@
+{
+  "jishin.john@mitwpu.edu.in": {
+    "name": "jj",
+    "email": "jishin.john@mitwpu.edu.in",
+    "created_at": "2026-04-26T13:03:45.594683",
+    "attempts": [
+      {
+        "timestamp": "2026-04-26T13:33:40.209162",
+        "job_role": "AI/ML Engineer",
+        "readiness_score": 33,
+        "skill_scores": {
+          "Reinforcement learning": 4,
+          "AI": 4,
+          "ML": 2
+        },
+        "gap_analysis": {
+          "strong_skills": [],
+          "gap_skills": [
+            "Reinforcement learning (4/10)",
+            "AI (4/10)",
+            "ML (2/10)"
+          ],
+          "adjacent_skills": [
+            "Deep learning",
+            "Natural Language Processing"
+          ]
+        },
+        "selection_chance": 39,
+        "tab_violations": 0,
+        "time_taken": 0,
+        "willingness_score": 70
+      },
+      {
+        "timestamp": "2026-04-26T22:49:53.724232",
+        "job_role": "ML",
+        "readiness_score": 40,
+        "skill_scores": {
+          "ML": 4
+        },
+        "gap_analysis": {
+          "strong_skills": [],
+          "gap_skills": [
+            "ML (4/10)"
+          ],
+          "adjacent_skills": [
+            "Programming",
+            "Data Analysis",
+            "Statistics"
+          ]
+        },
+        "selection_chance": 46,
+        "tab_violations": 0,
+        "time_taken": 0,
+        "willingness_score": 70
+      }
+    ],
+    "latest": {
+      "timestamp": "2026-04-26T22:49:53.724232",
+      "job_role": "ML",
+      "readiness_score": 40,
+      "skill_scores": {
+        "ML": 4
+      },
+      "gap_analysis": {
+        "strong_skills": [],
+        "gap_skills": [
+          "ML (4/10)"
+        ],
+        "adjacent_skills": [
+          "Programming",
+          "Data Analysis",
+          "Statistics"
+        ]
+      },
+      "selection_chance": 46,
+      "tab_violations": 0,
+      "time_taken": 0,
+      "willingness_score": 70
+    },
+    "xp": 620,
+    "badges": [
+      "first_assessment",
+      "zero_violations",
+      "learning_started",
+      "speed_demon"
+    ],
+    "streak": 1,
+    "skill_sprint_best": 0,
+    "game_history": [
+      {
+        "action": "return_attempt",
+        "xp": 20,
+        "timestamp": "2026-04-26T13:03:45.597983"
+      },
+      {
+        "action": "correct_mcq",
+        "xp": 40,
+        "timestamp": "2026-04-26T13:05:54.694138"
+      },
+      {
+        "action": "correct_mcq",
+        "xp": 20,
+        "timestamp": "2026-04-26T13:06:21.586663"
+      },
+      {
+        "action": "correct_mcq",
+        "xp": 30,
+        "timestamp": "2026-04-26T13:07:02.347598"
+      },
+      {
+        "action": "correct_mcq",
+        "xp": 30,
+        "timestamp": "2026-04-26T13:07:41.458648"
+      },
+      {
+        "action": "correct_mcq",
+        "xp": 30,
+        "timestamp": "2026-04-26T13:08:07.934890"
+      },
+      {
+        "action": "correct_mcq",
+        "xp": 10,
+        "timestamp": "2026-04-26T13:09:03.050966"
+      },
+      {
+        "action": "correct_mcq",
+        "xp": 10,
+        "timestamp": "2026-04-26T13:09:20.984948"
+      },
+      {
+        "action": "correct_mcq",
+        "xp": 30,
+        "timestamp": "2026-04-26T13:09:48.410203"
+      },
+      {
+        "action": "return_attempt",
+        "xp": 20,
+        "timestamp": "2026-04-26T13:27:40.574933"
+      },
+      {
+        "action": "correct_mcq",
+        "xp": 40,
+        "timestamp": "2026-04-26T13:29:17.487741"
+      },
+      {
+        "action": "correct_mcq",
+        "xp": 40,
+        "timestamp": "2026-04-26T13:30:11.579511"
+      },
+      {
+        "action": "correct_mcq",
+        "xp": 20,
+        "timestamp": "2026-04-26T13:30:51.015159"
+      },
+      {
+        "action": "learning_plan",
+        "xp": 25,
+        "timestamp": "2026-04-26T13:33:40.203877"
+      },
+      {
+        "action": "pdf_downloaded",
+        "xp": 10,
+        "timestamp": "2026-04-26T13:33:41.155616"
+      },
+      {
+        "action": "pdf_downloaded",
+        "xp": 10,
+        "timestamp": "2026-04-26T13:33:55.493803"
+      },
+      {
+        "action": "return_attempt",
+        "xp": 20,
+        "timestamp": "2026-04-26T18:10:09.669791"
+      },
+      {
+        "action": "correct_mcq",
+        "xp": 10,
+        "timestamp": "2026-04-26T18:10:34.164511"
+      },
+      {
+        "action": "return_attempt",
+        "xp": 20,
+        "timestamp": "2026-04-26T18:17:42.238610"
+      },
+      {
+        "action": "correct_mcq",
+        "xp": 20,
+        "timestamp": "2026-04-26T18:19:32.891392"
+      },
+      {
+        "action": "return_attempt",
+        "xp": 20,
+        "timestamp": "2026-04-26T18:23:05.790173"
+      },
+      {
+        "action": "correct_mcq",
+        "xp": 20,
+        "timestamp": "2026-04-26T18:23:32.178174"
+      },
+      {
+        "action": "return_attempt",
+        "xp": 20,
+        "timestamp": "2026-04-26T18:28:10.532842"
+      },
+      {
+        "action": "correct_mcq",
+        "xp": 10,
+        "timestamp": "2026-04-26T18:29:18.248794"
+      },
+      {
+        "action": "return_attempt",
+        "xp": 20,
+        "timestamp": "2026-04-26T22:47:52.067148"
+      },
+      {
+        "action": "correct_mcq",
+        "xp": 30,
+        "timestamp": "2026-04-26T22:48:34.314452"
+      },
+      {
+        "action": "learning_plan",
+        "xp": 25,
+        "timestamp": "2026-04-26T22:49:53.715045"
+      },
+      {
+        "action": "pdf_downloaded",
+        "xp": 10,
+        "timestamp": "2026-04-26T22:49:54.717953"
+      },
+      {
+        "action": "pdf_downloaded",
+        "xp": 10,
+        "timestamp": "2026-04-26T22:50:16.884235"
+      }
+    ]
+  },
+  "asatisanya1@gmail.com": {
+    "name": "sanya asati",
+    "email": "asatisanya1@gmail.com",
+    "created_at": "2026-04-26T13:41:00.865543",
+    "attempts": [
+      {
+        "timestamp": "2026-04-26T13:55:53.086426",
+        "job_role": "AI Intern",
+        "readiness_score": 17,
+        "skill_scores": {
+          "Artificial Intelligence": 2,
+          "Machine Learning": 0,
+          "Python": 2,
+          "LLM Evaluation": 4,
+          "Data Structures": 2,
+          "Problem Solving": 2,
+          "Deep Learning": 4,
+          "Probability": 2,
+          "Data Science": 0,
+          "Data Analysis": 0,
+          "Communication Skills": 2,
+          "Teamwork": 0,
+          "Statistics": 2
+        },
+        "gap_analysis": {
+          "strong_skills": [
+            "LLM Evaluation (4/10)",
+            "Deep Learning (4/10)"
+          ],
+          "gap_skills": [
+            "Machine Learning (0/10)",
+            "Data Science (0/10)",
+            "Data Analysis (0/10)",
+            "Teamwork (0/10)"
+          ],
+          "adjacent_skills": [
+            "Python",
+            "Statistics",
+            "Artificial Intelligence"
+          ]
+        },
+        "selection_chance": 23,
+        "tab_violations": 0,
+        "time_taken": 0,
+        "willingness_score": 70
+      }
+    ],
+    "latest": {
+      "timestamp": "2026-04-26T13:55:53.086426",
+      "job_role": "AI Intern",
+      "readiness_score": 17,
+      "skill_scores": {
+        "Artificial Intelligence": 2,
+        "Machine Learning": 0,
+        "Python": 2,
+        "LLM Evaluation": 4,
+        "Data Structures": 2,
+        "Problem Solving": 2,
+        "Deep Learning": 4,
+        "Probability": 2,
+        "Data Science": 0,
+        "Data Analysis": 0,
+        "Communication Skills": 2,
+        "Teamwork": 0,
+        "Statistics": 2
+      },
+      "gap_analysis": {
+        "strong_skills": [
+          "LLM Evaluation (4/10)",
+          "Deep Learning (4/10)"
+        ],
+        "gap_skills": [
+          "Machine Learning (0/10)",
+          "Data Science (0/10)",
+          "Data Analysis (0/10)",
+          "Teamwork (0/10)"
+        ],
+        "adjacent_skills": [
+          "Python",
+          "Statistics",
+          "Artificial Intelligence"
+        ]
+      },
+      "selection_chance": 23,
+      "tab_violations": 0,
+      "time_taken": 0,
+      "willingness_score": 70
+    },
+    "xp": 295,
+    "badges": [
+      "first_assessment",
+      "zero_violations",
+      "learning_started",
+      "speed_demon"
+    ],
+    "streak": 1,
+    "skill_sprint_best": 0,
+    "game_history": [
+      {
+        "action": "return_attempt",
+        "xp": 20,
+        "timestamp": "2026-04-26T13:41:00.869878"
+      },
+      {
+        "action": "correct_mcq",
+        "xp": 20,
+        "timestamp": "2026-04-26T13:43:07.109107"
+      },
+      {
+        "action": "correct_mcq",
+        "xp": 10,
+        "timestamp": "2026-04-26T13:43:46.526322"
+      },
+      {
+        "action": "correct_mcq",
+        "xp": 10,
+        "timestamp": "2026-04-26T13:44:00.834713"
+      },
+      {
+        "action": "correct_mcq",
+        "xp": 40,
+        "timestamp": "2026-04-26T13:44:17.417223"
+      },
+      {
+        "action": "correct_mcq",
+        "xp": 10,
+        "timestamp": "2026-04-26T13:44:26.261636"
+      },
+      {
+        "action": "correct_mcq",
+        "xp": 10,
+        "timestamp": "2026-04-26T13:44:40.920045"
+      },
+      {
+        "action": "correct_mcq",
+        "xp": 10,
+        "timestamp": "2026-04-26T13:44:50.308254"
+      },
+      {
+        "action": "correct_mcq",
+        "xp": 20,
+        "timestamp": "2026-04-26T13:44:59.924605"
+      },
+      {
+        "action": "correct_mcq",
+        "xp": 10,
+        "timestamp": "2026-04-26T13:45:12.938603"
+      },
+      {
+        "action": "correct_mcq",
+        "xp": 10,
+        "timestamp": "2026-04-26T13:45:24.689113"
+      },
+      {
+        "action": "correct_mcq",
+        "xp": 10,
+        "timestamp": "2026-04-26T13:45:36.549738"
+      },
+      {
+        "action": "correct_mcq",
+        "xp": 10,
+        "timestamp": "2026-04-26T13:45:54.598344"
+      },
+      {
+        "action": "correct_mcq",
+        "xp": 20,
+        "timestamp": "2026-04-26T13:46:05.263249"
+      },
+      {
+        "action": "good_interview",
+        "xp": 20,
+        "timestamp": "2026-04-26T13:47:55.364827"
+      },
+      {
+        "action": "good_interview",
+        "xp": 20,
+        "timestamp": "2026-04-26T13:48:19.517725"
+      },
+      {
+        "action": "learning_plan",
+        "xp": 25,
+        "timestamp": "2026-04-26T13:55:53.081471"
+      },
+      {
+        "action": "pdf_downloaded",
+        "xp": 10,
+        "timestamp": "2026-04-26T13:55:54.147856"
+      },
+      {
+        "action": "pdf_downloaded",
+        "xp": 10,
+        "timestamp": "2026-04-26T13:57:04.367548"
+      }
+    ]
+  },
+  "johnjishin@gmail.com": {
+    "name": "JJ",
+    "email": "johnjishin@gmail.com",
+    "created_at": "2026-04-26T16:00:57.724100",
+    "attempts": [
+      {
+        "timestamp": "2026-04-26T16:14:48.185743",
+        "job_role": "AI/ML Developer",
+        "readiness_score": 28,
+        "skill_scores": {
+          "Machine Learning": 2,
+          "Python": 4,
+          "NumPy": 4,
+          "Pandas": 6,
+          "Scikit-learn": 2,
+          "Deep Learning": 4,
+          "Analytical Skills": 2,
+          "Problem-Solving Skills": 0,
+          "Communication Skills": 2,
+          "Teamwork": 2
+        },
+        "gap_analysis": {
+          "strong_skills": [
+            "Pandas (6/10)"
+          ],
+          "gap_skills": [
+            "Machine Learning (2/10)",
+            "Scikit-learn (2/10)",
+            "Analytical Skills (2/10)",
+            "Problem-Solving Skills (0/10)",
+            "Communication Skills (2/10)",
+            "Teamwork (2/10)"
+          ],
+          "adjacent_skills": [
+            "Python (4/10)",
+            "NumPy (4/10)",
+            "Deep Learning (4/10)"
+          ]
+        },
+        "selection_chance": 34,
+        "tab_violations": 0,
+        "time_taken": 0,
+        "willingness_score": 70
+      },
+      {
+        "timestamp": "2026-04-26T23:21:40.588701",
+        "job_role": "ML",
+        "readiness_score": 40,
+        "skill_scores": {
+          "ML": 4
+        },
+        "gap_analysis": {
+          "strong_skills": [],
+          "gap_skills": [
+            "ML (4/10)"
+          ],
+          "adjacent_skills": []
+        },
+        "selection_chance": 46,
+        "tab_violations": 0,
+        "time_taken": 0,
+        "willingness_score": 70
+      }
+    ],
+    "latest": {
+      "timestamp": "2026-04-26T23:21:40.588701",
+      "job_role": "ML",
+      "readiness_score": 40,
+      "skill_scores": {
+        "ML": 4
+      },
+      "gap_analysis": {
+        "strong_skills": [],
+        "gap_skills": [
+          "ML (4/10)"
+        ],
+        "adjacent_skills": []
+      },
+      "selection_chance": 46,
+      "tab_violations": 0,
+      "time_taken": 0,
+      "willingness_score": 70
+    },
+    "xp": 710,
+    "badges": [
+      "perfect_mcq",
+      "first_assessment",
+      "zero_violations",
+      "learning_started",
+      "speed_demon",
+      "skill_sprint_master",
+      "flashcard_master"
+    ],
+    "streak": 1,
+    "skill_sprint_best": 130,
+    "game_history": [
+      {
+        "action": "return_attempt",
+        "xp": 20,
+        "timestamp": "2026-04-26T16:00:57.733081"
+      },
+      {
+        "action": "correct_mcq",
+        "xp": 10,
+        "timestamp": "2026-04-26T16:02:50.444028"
+      },
+      {
+        "action": "correct_mcq",
+        "xp": 30,
+        "timestamp": "2026-04-26T16:03:46.217493"
+      },
+      {
+        "action": "correct_mcq",
+        "xp": 40,
+        "timestamp": "2026-04-26T16:04:44.422688"
+      },
+      {
+        "action": "correct_mcq",
+        "xp": 50,
+        "timestamp": "2026-04-26T16:06:10.283508"
+      },
+      {
+        "action": "perfect_mcq",
+        "xp": 30,
+        "timestamp": "2026-04-26T16:06:10.289181"
+      },
+      {
+        "action": "correct_mcq",
+        "xp": 20,
+        "timestamp": "2026-04-26T16:06:45.854972"
+      },
+      {
+        "action": "correct_mcq",
+        "xp": 40,
+        "timestamp": "2026-04-26T16:07:23.072473"
+      },
+      {
+        "action": "correct_mcq",
+        "xp": 10,
+        "timestamp": "2026-04-26T16:08:00.821691"
+      },
+      {
+        "action": "correct_mcq",
+        "xp": 10,
+        "timestamp": "2026-04-26T16:08:10.084664"
+      },
+      {
+        "action": "correct_mcq",
+        "xp": 20,
+        "timestamp": "2026-04-26T16:08:23.515622"
+      },
+      {
+        "action": "correct_mcq",
+        "xp": 10,
+        "timestamp": "2026-04-26T16:08:32.548961"
+      },
+      {
+        "action": "skill_sprint_play",
+        "xp": 10,
+        "timestamp": "2026-04-26T16:14:26.706083"
+      },
+      {
+        "action": "skill_sprint_win",
+        "xp": 50,
+        "timestamp": "2026-04-26T16:14:26.709953"
+      },
+      {
+        "action": "skill_sprint_play",
+        "xp": 10,
+        "timestamp": "2026-04-26T16:14:32.717134"
+      },
+      {
+        "action": "skill_sprint_win",
+        "xp": 50,
+        "timestamp": "2026-04-26T16:14:32.722377"
+      },
+      {
+        "action": "learning_plan",
+        "xp": 25,
+        "timestamp": "2026-04-26T16:14:48.179663"
+      },
+      {
+        "action": "pdf_downloaded",
+        "xp": 10,
+        "timestamp": "2026-04-26T16:14:48.987809"
+      },
+      {
+        "action": "flashcard_done",
+        "xp": 15,
+        "timestamp": "2026-04-26T16:15:15.829868"
+      },
+      {
+        "action": "pdf_downloaded",
+        "xp": 10,
+        "timestamp": "2026-04-26T16:15:16.949782"
+      },
+      {
+        "action": "pdf_downloaded",
+        "xp": 10,
+        "timestamp": "2026-04-26T16:15:24.293270"
+      },
+      {
+        "action": "pdf_downloaded",
+        "xp": 10,
+        "timestamp": "2026-04-26T16:15:28.521478"
+      },
+      {
+        "action": "pdf_downloaded",
+        "xp": 10,
+        "timestamp": "2026-04-26T16:15:32.193429"
+      },
+      {
+        "action": "pdf_downloaded",
+        "xp": 10,
+        "timestamp": "2026-04-26T16:15:36.187911"
+      },
+      {
+        "action": "pdf_downloaded",
+        "xp": 10,
+        "timestamp": "2026-04-26T16:15:57.119610"
+      },
+      {
+        "action": "flashcard_done",
+        "xp": 15,
+        "timestamp": "2026-04-26T16:16:00.152193"
+      },
+      {
+        "action": "pdf_downloaded",
+        "xp": 10,
+        "timestamp": "2026-04-26T16:16:01.357581"
+      },
+      {
+        "action": "pdf_downloaded",
+        "xp": 10,
+        "timestamp": "2026-04-26T16:16:05.404627"
+      },
+      {
+        "action": "pdf_downloaded",
+        "xp": 10,
+        "timestamp": "2026-04-26T16:16:10.830036"
+      },
+      {
+        "action": "pdf_downloaded",
+        "xp": 10,
+        "timestamp": "2026-04-26T16:16:16.829021"
+      },
+      {
+        "action": "pdf_downloaded",
+        "xp": 10,
+        "timestamp": "2026-04-26T16:18:21.304110"
+      },
+      {
+        "action": "return_attempt",
+        "xp": 20,
+        "timestamp": "2026-04-26T23:17:55.816340"
+      },
+      {
+        "action": "correct_mcq",
+        "xp": 30,
+        "timestamp": "2026-04-26T23:18:20.283745"
+      },
+      {
+        "action": "return_attempt",
+        "xp": 20,
+        "timestamp": "2026-04-26T23:20:03.178476"
+      },
+      {
+        "action": "correct_mcq",
+        "xp": 20,
+        "timestamp": "2026-04-26T23:20:46.107236"
+      },
+      {
+        "action": "learning_plan",
+        "xp": 25,
+        "timestamp": "2026-04-26T23:21:40.577080"
+      },
+      {
+        "action": "pdf_downloaded",
+        "xp": 10,
+        "timestamp": "2026-04-26T23:21:41.520121"
+      }
+    ]
+  },
+  "demo@catalyst.ai": {
+    "name": "Demo Candidate",
+    "email": "demo@catalyst.ai",
+    "created_at": "2026-04-26T16:18:25.711047",
+    "attempts": [
+      {
+        "timestamp": "2026-04-26T16:22:07.387457",
+        "job_role": "ML",
+        "readiness_score": 40,
+        "skill_scores": {
+          "ML": 4
+        },
+        "gap_analysis": {
+          "strong_skills": [],
+          "gap_skills": [
+            "ML (4/10)"
+          ],
+          "adjacent_skills": [
+            "Programming",
+            "Data Analysis",
+            "Statistics"
+          ]
+        },
+        "selection_chance": 46,
+        "tab_violations": 0,
+        "time_taken": 0,
+        "willingness_score": 70
+      },
+      {
+        "timestamp": "2026-04-26T17:41:45.033328",
+        "job_role": "Machine Learning",
+        "readiness_score": 33,
+        "skill_scores": {
+          "Machine Learning": 4,
+          "Python": 2,
+          "Data Analysis": 4
+        },
+        "gap_analysis": {
+          "strong_skills": [],
+          "gap_skills": [
+            "Machine Learning (4/10)",
+            "Data Analysis (4/10)",
+            "Python (2/10)"
+          ],
+          "adjacent_skills": [
+            "Programming in general",
+            "Statistics",
+            "Data Science"
+          ]
+        },
+        "selection_chance": 39,
+        "tab_violations": 0,
+        "time_taken": 0,
+        "willingness_score": 70
+      }
+    ],
+    "latest": {
+      "timestamp": "2026-04-26T17:41:45.033328",
+      "job_role": "Machine Learning",
+      "readiness_score": 33,
+      "skill_scores": {
+        "Machine Learning": 4,
+        "Python": 2,
+        "Data Analysis": 4
+      },
+      "gap_analysis": {
+        "strong_skills": [],
+        "gap_skills": [
+          "Machine Learning (4/10)",
+          "Data Analysis (4/10)",
+          "Python (2/10)"
+        ],
+        "adjacent_skills": [
+          "Programming in general",
+          "Statistics",
+          "Data Science"
+        ]
+      },
+      "selection_chance": 39,
+      "tab_violations": 0,
+      "time_taken": 0,
+      "willingness_score": 70
+    },
+    "xp": 485,
+    "badges": [
+      "first_assessment",
+      "zero_violations",
+      "learning_started",
+      "speed_demon",
+      "flashcard_master",
+      "skill_sprint_master"
+    ],
+    "streak": 1,
+    "skill_sprint_best": 460,
+    "game_history": [
+      {
+        "action": "correct_mcq",
+        "xp": 30,
+        "timestamp": "2026-04-26T16:19:29.199923"
+      },
+      {
+        "action": "learning_plan",
+        "xp": 25,
+        "timestamp": "2026-04-26T16:22:07.371487"
+      },
+      {
+        "action": "pdf_downloaded",
+        "xp": 10,
+        "timestamp": "2026-04-26T16:22:08.361269"
+      },
+      {
+        "action": "flashcard_done",
+        "xp": 15,
+        "timestamp": "2026-04-26T16:22:38.850452"
+      },
+      {
+        "action": "pdf_downloaded",
+        "xp": 10,
+        "timestamp": "2026-04-26T16:22:39.850472"
+      },
+      {
+        "action": "pdf_downloaded",
+        "xp": 10,
+        "timestamp": "2026-04-26T16:22:50.476688"
+      },
+      {
+        "action": "correct_mcq",
+        "xp": 30,
+        "timestamp": "2026-04-26T17:36:02.097867"
+      },
+      {
+        "action": "correct_mcq",
+        "xp": 10,
+        "timestamp": "2026-04-26T17:36:17.415894"
+      },
+      {
+        "action": "correct_mcq",
+        "xp": 40,
+        "timestamp": "2026-04-26T17:38:30.744369"
+      },
+      {
+        "action": "correct_mcq",
+        "xp": 20,
+        "timestamp": "2026-04-26T17:38:52.626506"
+      },
+      {
+        "action": "correct_mcq",
+        "xp": 30,
+        "timestamp": "2026-04-26T17:39:09.909455"
+      },
+      {
+        "action": "skill_sprint_play",
+        "xp": 10,
+        "timestamp": "2026-04-26T17:41:22.671330"
+      },
+      {
+        "action": "skill_sprint_win",
+        "xp": 50,
+        "timestamp": "2026-04-26T17:41:22.679298"
+      },
+      {
+        "action": "skill_sprint_play",
+        "xp": 10,
+        "timestamp": "2026-04-26T17:41:26.499908"
+      },
+      {
+        "action": "skill_sprint_win",
+        "xp": 50,
+        "timestamp": "2026-04-26T17:41:26.506943"
+      },
+      {
+        "action": "learning_plan",
+        "xp": 25,
+        "timestamp": "2026-04-26T17:41:45.023098"
+      },
+      {
+        "action": "pdf_downloaded",
+        "xp": 10,
+        "timestamp": "2026-04-26T17:41:46.205729"
+      },
+      {
+        "action": "pdf_downloaded",
+        "xp": 10,
+        "timestamp": "2026-04-26T17:41:53.372463"
+      },
+      {
+        "action": "correct_mcq",
+        "xp": 20,
+        "timestamp": "2026-04-26T18:04:00.213072"
+      },
+      {
+        "action": "correct_mcq",
+        "xp": 20,
+        "timestamp": "2026-04-26T18:04:29.956288"
+      },
+      {
+        "action": "correct_mcq",
+        "xp": 40,
+        "timestamp": "2026-04-26T18:04:52.727239"
+      },
+      {
+        "action": "correct_mcq",
+        "xp": 10,
+        "timestamp": "2026-04-26T18:05:14.115343"
+      }
+    ]
+  },
+  "tamanna@mitwpu.edu.in": {
+    "name": "Tamanna",
+    "email": "tamanna@mitwpu.edu.in",
+    "created_at": "2026-04-26T22:59:29.088439",
+    "attempts": [
+      {
+        "timestamp": "2026-04-26T23:01:04.897152",
+        "job_role": "ML",
+        "readiness_score": 20,
+        "skill_scores": {
+          "ML": 2
+        },
+        "gap_analysis": {
+          "strong_skills": [],
+          "gap_skills": [
+            "ML (2/10)"
+          ],
+          "adjacent_skills": [
+            "Programming",
+            "Data Analysis",
+            "Statistics"
+          ]
+        },
+        "selection_chance": 26,
+        "tab_violations": 0,
+        "time_taken": 0,
+        "willingness_score": 70
+      }
+    ],
+    "latest": {
+      "timestamp": "2026-04-26T23:01:04.897152",
+      "job_role": "ML",
+      "readiness_score": 20,
+      "skill_scores": {
+        "ML": 2
+      },
+      "gap_analysis": {
+        "strong_skills": [],
+        "gap_skills": [
+          "ML (2/10)"
+        ],
+        "adjacent_skills": [
+          "Programming",
+          "Data Analysis",
+          "Statistics"
+        ]
+      },
+      "selection_chance": 26,
+      "tab_violations": 0,
+      "time_taken": 0,
+      "willingness_score": 70
+    },
+    "xp": 75,
+    "badges": [
+      "first_assessment",
+      "zero_violations",
+      "learning_started",
+      "speed_demon"
+    ],
+    "streak": 1,
+    "skill_sprint_best": 0,
+    "game_history": [
+      {
+        "action": "return_attempt",
+        "xp": 20,
+        "timestamp": "2026-04-26T22:59:29.096576"
+      },
+      {
+        "action": "correct_mcq",
+        "xp": 10,
+        "timestamp": "2026-04-26T23:00:02.783597"
+      },
+      {
+        "action": "learning_plan",
+        "xp": 25,
+        "timestamp": "2026-04-26T23:01:04.883630"
+      },
+      {
+        "action": "pdf_downloaded",
+        "xp": 10,
+        "timestamp": "2026-04-26T23:01:05.861764"
+      },
+      {
+        "action": "pdf_downloaded",
+        "xp": 10,
+        "timestamp": "2026-04-26T23:02:12.095092"
+      }
+    ]
+  }
+}
