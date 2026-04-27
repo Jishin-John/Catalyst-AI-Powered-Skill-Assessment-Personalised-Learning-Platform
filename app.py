@@ -1,182 +1,178 @@
 import streamlit as st
 
 st.set_page_config(
-    page_title="Catalyst — AI Skill Assessment",
+    page_title="Catalyst — AI Skill Assessment Platform",
     page_icon="◈",
     layout="wide",
     initial_sidebar_state="collapsed"
 )
 
-# Custom CSS for the "Modern Dark" aesthetic
+# Custom CSS to match the screenshots exactly
 st.markdown("""
 <style>
-    /* Hide Default Elements */
+    /* Hide Streamlit elements */
     [data-testid="stSidebar"] {display: none;}
     header {visibility: hidden;}
-    .main > div {padding-top: 2rem;}
-
-    /* Background Container */
-    .stApp {
-        background: radial-gradient(circle at top right, #1a1a3a, #070717);
-    }
+    .main > div {padding-top: 2rem; background-color: #0e1117;}
 
     /* Hero Section */
-    .hero-container {
+    .hero {
         text-align: center;
-        padding: 3rem 1rem;
-        margin-bottom: 2rem;
-    }
-
-    .main-logo {
-        font-size: 80px;
-        margin-bottom: 0;
-        background: linear-gradient(to bottom, #ffffff, #63b3ed);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    .hero-title {
-        font-size: 64px;
-        font-weight: 800;
-        letter-spacing: -2px;
-        margin-bottom: 10px;
-        color: white;
-    }
-
-    .hero-subtitle {
-        color: #a0aec0;
-        font-size: 20px;
-        max-width: 700px;
-        margin: 0 auto 40px auto;
-    }
-
-    /* Glass Cards */
-    .portal-card {
-        background: rgba(255, 255, 255, 0.03);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        border-radius: 24px;
-        padding: 40px;
-        height: 100%;
-        transition: transform 0.3s ease, border 0.3s ease;
-        text-align: center;
-    }
-
-    .portal-card:hover {
-        transform: translateY(-10px);
-        border-color: #63b3ed;
-        background: rgba(255, 255, 255, 0.05);
-    }
-
-    .portal-icon {
-        font-size: 50px;
+        padding: 40px 20px;
         margin-bottom: 20px;
     }
+    
+    .hero-logo { font-size: 50px; color: white; margin-bottom: 10px; }
+    .hero-title { font-size: 52px; font-weight: 700; color: white; margin-top: -10px; }
+    .hero-subtitle { color: #808495; font-size: 18px; margin-bottom: 30px; }
+    
+    /* Stats Row */
+    .stats-container {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        margin-bottom: 30px;
+    }
+    .stat-box { text-align: center; }
+    .stat-val { font-size: 32px; font-weight: 700; color: #5dade2; }
+    .stat-lab { font-size: 12px; color: #808495; margin-top: -5px; }
+    
+    .hero-footer { color: #50535c; font-size: 14px; font-style: italic; margin-bottom: 40px; }
 
-    .portal-name {
-        font-size: 28px;
-        font-weight: 700;
+    /* Portal Cards */
+    .card {
+        border-radius: 30px;
+        padding: 60px 40px;
+        text-align: center;
+        min-height: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         color: white;
-        margin-bottom: 15px;
+    }
+    
+    .candidate-card {
+        background: linear-gradient(135deg, #7b68ee 0%, #a29bfe 100%);
+    }
+    
+    .hr-card {
+        background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%, #fecfef 100%);
     }
 
-    .portal-text {
-        color: #718096;
-        font-size: 15px;
-        line-height: 1.6;
-        margin-bottom: 25px;
-    }
+    .card-icon { font-size: 60px; margin-bottom: 20px; }
+    .card-title { font-size: 32px; font-weight: 700; margin-bottom: 15px; }
+    .card-desc { font-size: 16px; opacity: 0.9; line-height: 1.4; margin-bottom: 30px; max-width: 400px; }
 
-    /* Feature Badges */
+    /* Badges/Pills */
+    .badge-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        max-width: 450px;
+    }
     .badge {
-        display: inline-block;
-        padding: 4px 12px;
-        border-radius: 12px;
-        font-size: 11px;
+        background: rgba(255, 255, 255, 0.2);
+        padding: 6px 16px;
+        border-radius: 20px;
+        font-size: 12px;
+        font-weight: 500;
+        backdrop-filter: blur(5px);
+    }
+
+    /* Standardizing Button Spacing */
+    div.stButton > button {
+        border-radius: 10px;
+        height: 50px;
         font-weight: 600;
-        margin: 4px;
-        background: rgba(99, 179, 237, 0.1);
-        color: #63b3ed;
-        border: 1px solid rgba(99, 179, 237, 0.2);
+        border: none;
+        margin-top: 10px;
+    }
+    
+    /* Red Button for Candidate */
+    .candidate-btn div.stButton > button {
+        background-color: #ff4b4b !important;
+        color: white !important;
+    }
+
+    /* Dark Button for HR */
+    .hr-btn div.stButton > button {
+        background-color: #1c1e23 !important;
+        color: white !important;
+        border: 1px solid #333 !important;
     }
 </style>
 """, unsafe_allow_html=True)
 
-# Hero Section
-st.markdown(f"""
-<div class="hero-container">
-    <div class="main-logo">◈</div>
-    <h1 class="hero-title">Catalyst</h1>
-    <p class="hero-subtitle">
-        Bridging the gap between <b>claims</b> and <b>competence</b>. 
-        AI-driven skill verification for the modern workforce.
-    </p>
+# --- Hero Section ---
+st.markdown("""
+<div class="hero">
+    <div class="hero-logo">◈</div>
+    <div class="hero-title">Catalyst</div>
+    <div class="hero-subtitle">AI-Powered Skill Assessment & Personalised Learning Platform</div>
+    <div class="stats-container">
+        <div class="stat-box"><div class="stat-val">AI</div><div class="stat-lab">Powered Assessment</div></div>
+        <div class="stat-box"><div class="stat-val">Live</div><div class="stat-lab">YouTube Resources</div></div>
+        <div class="stat-box"><div class="stat-val">Real</div><div class="stat-lab">Skill Verification</div></div>
+        <div class="stat-box"><div class="stat-val">Smart</div><div class="stat-lab">Learning Plans</div></div>
+    </div>
+    <div class="hero-footer">A resume tells you what someone claims to know — not how well they actually know it.</div>
 </div>
 """, unsafe_allow_html=True)
 
-# Portal Selection
-col_left, col_c1, col_space, col_c2, col_right = st.columns([1, 4, 1, 4, 1])
+# --- Portal Columns ---
+col1, col2 = st.columns(2, gap="medium")
 
-with col_c1:
+with col1:
     st.markdown("""
-    <div class="portal-card">
-        <div class="portal-icon">🎯</div>
-        <div class="portal-name">Candidate Portal</div>
-        <p class="portal-text">
-            Validate your expertise through adaptive AI interviews, 
-            earn verified credentials, and follow a custom learning roadmap.
-        </p>
-        <div style="margin-bottom: 20px;">
-            <span class="badge">AI INTERVIEW</span>
-            <span class="badge">XP SYSTEM</span>
-            <span class="badge">LEARNING PATH</span>
+    <div class="card candidate-card">
+        <div class="card-icon">🎯</div>
+        <div class="card-title">Candidate Portal</div>
+        <div class="card-desc">
+            Get assessed on your real skills through an AI-powered interview. Discover your gaps and get a personalised learning roadmap.
+        </div>
+        <div class="badge-container">
+            <div class="badge">AI Interview</div>
+            <div class="badge">Skill Scoring</div>
+            <div class="badge">Anti-Cheat Timer</div>
+            <div class="badge">Learning Plan</div>
+            <div class="badge">YouTube Resources</div>
+            <div class="badge">PDF Report</div>
         </div>
     </div>
     """, unsafe_allow_html=True)
-    if st.button("Enter Candidate Portal", type="primary", use_container_width=True, key="c_btn"):
+    st.markdown('<div class="candidate-btn">', unsafe_allow_html=True)
+    if st.button("Enter Candidate Portal →", use_container_width=True, key="c_btn"):
         st.switch_page("pages/Candidate_Portal.py")
+    st.markdown('</div>', unsafe_allow_html=True)
 
-with col_c2:
+with col2:
     st.markdown("""
-    <div class="portal-card">
-        <div class="portal-icon">👔</div>
-        <div class="portal-name">HR Portal</div>
-        <p class="portal-text">
-            Access high-signal candidate data, compare skill distributions, 
-            and hire with confidence using integrity-backed analytics.
-        </p>
-        <div style="margin-bottom: 20px;">
-            <span class="badge">DASHBOARD</span>
-            <span class="badge">INTEGRITY SCORE</span>
-            <span class="badge">HIRE CHANCE</span>
+    <div class="card hr-card" style="color: #333;">
+        <div class="card-icon">👔</div>
+        <div class="card-title">HR Portal</div>
+        <div class="card-desc">
+            View all candidate assessments, track progress over time, and make data-driven hiring decisions with detailed analytics.
+        </div>
+        <div class="badge-container">
+            <div class="badge" style="background: rgba(0,0,0,0.05);">Candidate Dashboard</div>
+            <div class="badge" style="background: rgba(0,0,0,0.05);">Progress Tracking</div>
+            <div class="badge" style="background: rgba(0,0,0,0.05);">Selection Chances</div>
+            <div class="badge" style="background: rgba(0,0,0,0.05);">Willingness Score</div>
+            <div class="badge" style="background: rgba(0,0,0,0.05);">Comparison View</div>
+            <div class="badge" style="background: rgba(0,0,0,0.05);">Analytics</div>
         </div>
     </div>
     """, unsafe_allow_html=True)
-    if st.button("Enter HR Portal", use_container_width=True, key="h_btn"):
+    st.markdown('<div class="hr-btn">', unsafe_allow_html=True)
+    if st.button("Enter HR Portal →", use_container_width=True, key="h_btn"):
         st.switch_page("pages/HR_Portal.py")
+    st.markdown('</div>', unsafe_allow_html=True)
 
-# Footer Process Steps
+# --- Footer ---
 st.markdown("<br><br>", unsafe_allow_html=True)
-steps_cols = st.columns(5)
-steps = [
-    ("📄", "Extract"), 
-    ("🤖", "Analyze"), 
-    ("💬", "Assess"), 
-    ("📊", "Verify"), 
-    ("🎓", "Improve")
-]
-
-for i, col in enumerate(steps_cols):
-    with col:
-        st.markdown(f"""
-        <div style="text-align: center; opacity: 0.6;">
-            <div style="font-size: 24px;">{steps[i][0]}</div>
-            <div style="font-size: 12px; color: white; font-weight: 600; margin-top: 5px;">{steps[i][1]}</div>
-        </div>
-        """, unsafe_allow_html=True)
-
-st.markdown("---")
 st.markdown("""
-<div style="text-align: center; color: #4a5568; font-size: 12px; letter-spacing: 1px;">
-    BUILT FOR DECCAN AI HACKATHON 2026 | AGENTIC AI + GROQ + YOUTUBE API
-</div>
+<p style="text-align: center; color: #50535c; font-size: 13px;">
+    ◈ Catalyst — Built for Deccan AI Hackathon 2026 | Powered by Agentic AI + Groq + YouTube API
+</p>
 """, unsafe_allow_html=True)
