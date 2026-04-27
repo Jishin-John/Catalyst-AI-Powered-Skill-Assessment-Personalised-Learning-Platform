@@ -66,8 +66,7 @@ st.markdown("""
 # --- HEADER ---
 col1, col2 = st.columns([1, 6])
 with col1:
-    if st.button("← Home"):
-        st.switch_page("app.py")
+ st.page_link("app.py", label="← Home")
 with col2:
     st.markdown("### 👔 HR Portal — Hiring Intelligence Dashboard")
 
@@ -84,8 +83,7 @@ if not all_candidates:
         <div style="color:#718096;">Share the Candidate Portal with applicants.</div>
     </div>
     """, unsafe_allow_html=True)
-    if st.button("Go to Candidate Portal", type="primary"):
-        st.switch_page("pages/Candidate_Portal.py")
+    st.page_link("pages/Candidate_Portal.py", label="Go to Candidate Portal")
     st.stop()
 
 # --- BUILD CANDIDATES LIST ---
