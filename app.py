@@ -1,206 +1,182 @@
 import streamlit as st
 
 st.set_page_config(
-    page_title="Catalyst — AI Skill Assessment Platform",
+    page_title="Catalyst — AI Skill Assessment",
     page_icon="◈",
     layout="wide",
     initial_sidebar_state="collapsed"
 )
 
+# Custom CSS for the "Modern Dark" aesthetic
 st.markdown("""
 <style>
+    /* Hide Default Elements */
     [data-testid="stSidebar"] {display: none;}
-    .main > div {padding-top: 0rem;}
-    
-    .hero {
-        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
-        padding: 60px 40px;
-        border-radius: 20px;
+    header {visibility: hidden;}
+    .main > div {padding-top: 2rem;}
+
+    /* Background Container */
+    .stApp {
+        background: radial-gradient(circle at top right, #1a1a3a, #070717);
+    }
+
+    /* Hero Section */
+    .hero-container {
         text-align: center;
-        margin-bottom: 40px;
-        animation: fadeIn 1s ease-in;
+        padding: 3rem 1rem;
+        margin-bottom: 2rem;
     }
-    
-    @keyframes fadeIn {
-        from {opacity: 0; transform: translateY(-20px);}
-        to {opacity: 1; transform: translateY(0);}
+
+    .main-logo {
+        font-size: 80px;
+        margin-bottom: 0;
+        background: linear-gradient(to bottom, #ffffff, #63b3ed);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
-    
-    @keyframes pulse {
-        0%, 100% {transform: scale(1);}
-        50% {transform: scale(1.05);}
-    }
-    
+
     .hero-title {
-        font-size: 56px;
+        font-size: 64px;
         font-weight: 800;
-        color: white;
+        letter-spacing: -2px;
         margin-bottom: 10px;
-        letter-spacing: -1px;
+        color: white;
     }
-    
+
     .hero-subtitle {
-        font-size: 20px;
         color: #a0aec0;
-        margin-bottom: 40px;
+        font-size: 20px;
+        max-width: 700px;
+        margin: 0 auto 40px auto;
     }
-    
+
+    /* Glass Cards */
     .portal-card {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        border-radius: 20px;
-        padding: 40px 30px;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 24px;
+        padding: 40px;
+        height: 100%;
+        transition: transform 0.3s ease, border 0.3s ease;
         text-align: center;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        border: 2px solid transparent;
-        animation: fadeIn 1.2s ease-in;
     }
-    
+
     .portal-card:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 20px 40px rgba(102, 126, 234, 0.4);
+        transform: translateY(-10px);
+        border-color: #63b3ed;
+        background: rgba(255, 255, 255, 0.05);
     }
-    
-    .portal-card-hr {
-        background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-    }
-    
-    .portal-card-hr:hover {
-        box-shadow: 0 20px 40px rgba(240, 147, 251, 0.4);
-    }
-    
+
     .portal-icon {
-        font-size: 60px;
+        font-size: 50px;
         margin-bottom: 20px;
     }
-    
-    .portal-title {
+
+    .portal-name {
         font-size: 28px;
         font-weight: 700;
         color: white;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
     }
-    
-    .portal-desc {
+
+    .portal-text {
+        color: #718096;
         font-size: 15px;
-        color: rgba(255,255,255,0.85);
         line-height: 1.6;
-        margin-bottom: 20px;
+        margin-bottom: 25px;
     }
-    
-    .feature-badge {
+
+    /* Feature Badges */
+    .badge {
         display: inline-block;
-        background: rgba(255,255,255,0.2);
-        color: white;
         padding: 4px 12px;
-        border-radius: 20px;
-        font-size: 12px;
-        margin: 3px;
-    }
-    
-    .stats-row {
-        display: flex;
-        justify-content: center;
-        gap: 40px;
-        margin: 30px 0;
-    }
-    
-    .stat-item {
-        text-align: center;
-        color: white;
-    }
-    
-    .stat-number {
-        font-size: 36px;
-        font-weight: 800;
+        border-radius: 12px;
+        font-size: 11px;
+        font-weight: 600;
+        margin: 4px;
+        background: rgba(99, 179, 237, 0.1);
         color: #63b3ed;
-    }
-    
-    .stat-label {
-        font-size: 14px;
-        color: #a0aec0;
+        border: 1px solid rgba(99, 179, 237, 0.2);
     }
 </style>
 """, unsafe_allow_html=True)
 
-st.markdown("""
-<div class="hero">
-    <div class="portal-icon">◈</div>
-    <div class="hero-title">Catalyst</div>
-    <div class="hero-subtitle">AI-Powered Skill Assessment & Personalised Learning Platform</div>
-    <div class="stats-row">
-        <div class="stat-item">
-            <div class="stat-number">AI</div>
-            <div class="stat-label">Powered Assessment</div>
-        </div>
-        <div class="stat-item">
-            <div class="stat-number">Live</div>
-            <div class="stat-label">YouTube Resources</div>
-        </div>
-        <div class="stat-item">
-            <div class="stat-number">Real</div>
-            <div class="stat-label">Skill Verification</div>
-        </div>
-        <div class="stat-item">
-            <div class="stat-number">Smart</div>
-            <div class="stat-label">Learning Plans</div>
-        </div>
-    </div>
-    <p style="color: #718096; font-size: 16px;">A resume tells you what someone claims to know — not how well they actually know it.</p>
+# Hero Section
+st.markdown(f"""
+<div class="hero-container">
+    <div class="main-logo">◈</div>
+    <h1 class="hero-title">Catalyst</h1>
+    <p class="hero-subtitle">
+        Bridging the gap between <b>claims</b> and <b>competence</b>. 
+        AI-driven skill verification for the modern workforce.
+    </p>
 </div>
 """, unsafe_allow_html=True)
 
-col1, col2 = st.columns(2)
+# Portal Selection
+col_left, col_c1, col_space, col_c2, col_right = st.columns([1, 4, 1, 4, 1])
 
-with col1:
+with col_c1:
     st.markdown("""
     <div class="portal-card">
         <div class="portal-icon">🎯</div>
-        <div class="portal-title">Candidate Portal</div>
-        <div class="portal-desc">
-            Get assessed on your real skills through an AI-powered interview.
-            Discover your gaps and get a personalised learning roadmap.
-        </div>
-        <div>
-            <span class="feature-badge">AI Interview</span>
-            <span class="feature-badge">Skill Scoring</span>
-            <span class="feature-badge">Anti-Cheat Timer</span>
-            <span class="feature-badge">Learning Plan</span>
-            <span class="feature-badge">YouTube Resources</span>
-            <span class="feature-badge">PDF Report</span>
+        <div class="portal-name">Candidate Portal</div>
+        <p class="portal-text">
+            Validate your expertise through adaptive AI interviews, 
+            earn verified credentials, and follow a custom learning roadmap.
+        </p>
+        <div style="margin-bottom: 20px;">
+            <span class="badge">AI INTERVIEW</span>
+            <span class="badge">XP SYSTEM</span>
+            <span class="badge">LEARNING PATH</span>
         </div>
     </div>
     """, unsafe_allow_html=True)
-    st.markdown("<br>", unsafe_allow_html=True)
-    if st.button("Enter Candidate Portal →", type="primary", use_container_width=True, key="candidate_btn"):
-        st.switch_page("Candidate_Portal.py")
+    if st.button("Enter Candidate Portal", type="primary", use_container_width=True, key="c_btn"):
+        st.switch_page("pages/Candidate_Portal.py")
 
-with col2:
+with col_c2:
     st.markdown("""
-    <div class="portal-card portal-card-hr">
+    <div class="portal-card">
         <div class="portal-icon">👔</div>
-        <div class="portal-title">HR Portal</div>
-        <div class="portal-desc">
-            View all candidate assessments, track progress over time,
-            and make data-driven hiring decisions with detailed analytics.
-        </div>
-        <div>
-            <span class="feature-badge">Candidate Dashboard</span>
-            <span class="feature-badge">Progress Tracking</span>
-            <span class="feature-badge">Selection Chances</span>
-            <span class="feature-badge">Willingness Score</span>
-            <span class="feature-badge">Comparison View</span>
-            <span class="feature-badge">Analytics</span>
+        <div class="portal-name">HR Portal</div>
+        <p class="portal-text">
+            Access high-signal candidate data, compare skill distributions, 
+            and hire with confidence using integrity-backed analytics.
+        </p>
+        <div style="margin-bottom: 20px;">
+            <span class="badge">DASHBOARD</span>
+            <span class="badge">INTEGRITY SCORE</span>
+            <span class="badge">HIRE CHANCE</span>
         </div>
     </div>
     """, unsafe_allow_html=True)
-    st.markdown("<br>", unsafe_allow_html=True)
-    if st.button("Enter HR Portal →", use_container_width=True, key="hr_btn"):
-        st.switch_page("HR_Portal.py")
+    if st.button("Enter HR Portal", use_container_width=True, key="h_btn"):
+        st.switch_page("pages/HR_Portal.py")
+
+# Footer Process Steps
+st.markdown("<br><br>", unsafe_allow_html=True)
+steps_cols = st.columns(5)
+steps = [
+    ("📄", "Extract"), 
+    ("🤖", "Analyze"), 
+    ("💬", "Assess"), 
+    ("📊", "Verify"), 
+    ("🎓", "Improve")
+]
+
+for i, col in enumerate(steps_cols):
+    with col:
+        st.markdown(f"""
+        <div style="text-align: center; opacity: 0.6;">
+            <div style="font-size: 24px;">{steps[i][0]}</div>
+            <div style="font-size: 12px; color: white; font-weight: 600; margin-top: 5px;">{steps[i][1]}</div>
+        </div>
+        """, unsafe_allow_html=True)
 
 st.markdown("---")
 st.markdown("""
-<p style="text-align: center; color: #718096; font-size: 14px;">
-    ◈ Catalyst — Built for Deccan AI Hackathon 2026 | Powered by Agentic AI + Groq + YouTube API
-</p>
+<div style="text-align: center; color: #4a5568; font-size: 12px; letter-spacing: 1px;">
+    BUILT FOR DECCAN AI HACKATHON 2026 | AGENTIC AI + GROQ + YOUTUBE API
+</div>
 """, unsafe_allow_html=True)
